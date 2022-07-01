@@ -1,0 +1,71 @@
+h1{
+    color: rgb(77, 26, 126);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    background-color: #bbdcef;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 904px;
+    margin-right: 100px;
+}
+.grid-item {
+    background-color: rgba(237, 240, 169, 0.964);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    filter: contrast(5);
+    opacity: 0.4;
+}
+.dhanJhul{
+    /* background-color: rgb(61, 11, 111); */
+    margin-left: 839px;
+    margin-top: -349px;
+    
+}
+.table{
+    background-color: beige;
+}
+
+.table-div{
+    background-color: rgb(241, 241, 116);
+    margin-right: 200px;
+}
+
+.cross{
+    height: 30px;
+}
+
+#IFAc{
+    height: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.icons-checkup{
+    /* background-color: aquamarine; */
+    width: 20vw;
+    position: relative;
+    top: 230px;
+    left: 380px;
+}
+#register{
+    position: relative;
+    bottom: 78px;
+    right: 24px;
+}
+#shot{
+    position: relative;
+    left: 37px;
+}
+#ifa{
+    position: relative;
+    right: 10px;
+}
+#check-health{
+    position: relative;
+    left: 15px;
+}

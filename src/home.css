@@ -1,0 +1,12 @@
+.body{
+    background-image: url('./App-pics/bg3.jpg');
+    /* Full height */
+    height: 100vh;
+    
+        /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(227, 237, 199, 0.734);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
