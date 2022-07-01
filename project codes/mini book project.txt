@@ -1,0 +1,74 @@
+import React from 'react';
+import ReactDom from 'react-dom';
+
+import './index.css';
+import {books} from './books'
+import Book from './Book'
+
+function BookList(){
+  return (
+    <section className="booklist">
+      {books.map(book =>{
+        return <Book key={book.id} {...book}></Book>;
+      })}
+     </section> 
+    );
+}
+
+ReactDom.render(<BookList/>, document.getElementById('root'));
+
+#index.css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(252, 244, 212);
+  color: rgb(37, 26, 37);
+}
+h1 {
+  color: darkslategray;
+}
+h6 {
+  color: firebrick;
+}
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+  }
+}
+.book {
+  background: rgb(222, 240, 248);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.book h1 {
+  margin-top: 0.5rem;
+  color: rgb(14, 34, 31);
+}
+.book h4 {
+  font-family: cursive;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: rgb(182, 9, 90);
+  letter-spacing: 0.2rem;
+}
+.book h6 {
+  position: relative;
+  margin-top: 1.5rem;
+}
+.center {
+  margin-left: 65px;
+  width: 57%;
+}
